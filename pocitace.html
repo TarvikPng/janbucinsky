@@ -8,6 +8,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="projekty.css">
     <style>
+                  body {
+    overflow: hidden;
+  }
         /* Your CSS styles */
         html, body {
             margin: 0;
@@ -117,14 +120,23 @@
             animation-delay: 1s;
         }
 
-        .domuimg img {
-            max-width: 680px;
-            margin-right: -60px ;
-            padding: 40px;
-            opacity: 0;
-            animation: zoom 1s ease forwards, fotkalevitace 4s ease-in-out infinite;
-            animation-delay: 1s, 2s;
-        }
+        .domuimg {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Adjust as needed */
+}
+
+.domuimg img {
+    
+    border-radius: 70px; /* Adjust the border radius as needed */
+    max-width: 580px;
+    padding: 40px;
+    opacity: 0;
+    animation: zoom 1s ease forwards, fotkalevitace 4s ease-in-out infinite;
+    animation-delay: 1s, 2s;
+}
+
 
         .first {
             max-width: 200px;
